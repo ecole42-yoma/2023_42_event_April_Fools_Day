@@ -8,24 +8,26 @@ $choices = array("rock.", "paper.", "scissors.");
 
 echo "Choose rock, paper, or scissors: ";
 $line = (string)fgets(STDIN);
+// $line = fopen(STDIN, "r");
+// $line = fopen("php://stdin", "r");
 $line = strtolower($line);
 $line = trim($line);
 
 if ($line == "" || $line == "rock" || $line == "paper" || $line == "scissors") {
-	echo "You must choose rock, paper, or scissors."
+	echo "You must choose rock, paper, or scissors.";
 }else{
-	$computer = $choices[rnad(0, 2)];
+	$computer = $choices[rand(0, 2)];
 	// check for win, lose, or draw
 	if ($line == "rock" && $computer == "scissors.") {
-		echo $win $computer;
+		echo $win, $computer;
 	} elseif ($line == "paper" && $computer == "rock.") {
-		echo $win $computer;
+		echo $win, $computer;
 	} elseif ($line == "scissors" && $computer == "paper.") {
-		echo $win $computer;
+		echo $win, $computer;
 	} elseif ($line == $computer) {
-		echo $draw $computer;
+		echo $draw, $computer;
 	} else {
-		echo $lose $computer;
+		echo $lose, $computer;
 	}
 }
 

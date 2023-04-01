@@ -1,0 +1,5 @@
+
+objdump -d
+objdump -D
+as
+ld
