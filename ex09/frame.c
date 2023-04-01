@@ -61,11 +61,8 @@ void vector_clear(vector_t* vector){
 }
 
 void main3(vector_t *vector){
-	char* p;
-	char* next;
-
 	repeat_print_(vector->max_len_word + 4, '*', LF);
-	for (int i = 0; i < vector->size; i++){
+	for (size_t i = 0; i < vector->size; i++){
 		printf("* %s", vector->vector[i]);
 		repeat_print_(vector->max_len_word - strlen(vector->vector[i]), ' ', NONE);
 		printf(" *\n");
@@ -75,7 +72,6 @@ void main3(vector_t *vector){
 }
 
 vector_t* main2(int argc, char** argv){
-	char* p;
 	char* next;
 	size_t temp_len;
 	vector_t* vector;
