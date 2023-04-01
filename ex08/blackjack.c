@@ -27,10 +27,10 @@ size_t score_(char card, size_t* ace_count){
 			(*ace_count)++;
 			// *is_ace = *is_ace + 1;
 			return 0;
-		case 'K':
-		case 'D':
-		case 'J':
 		case 'T':
+		case 'J':
+		case 'D':
+		case 'K':
 			return 10;
 		default:
 			return card - '0';
@@ -46,8 +46,8 @@ void ace_calculate(size_t* score, size_t ace_count){
 			temp += 11;
 			flag_eleven = 1;
 		}else{
-			if (flag_eleven){
-				temp -= 10;
+			if (flag_eleven && (temp + 1 > 21)){
+					temp -= 10;
 			}
 			temp += 1;
 			flag_eleven = 0;
