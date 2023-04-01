@@ -75,7 +75,12 @@ void play_game(char* deck){
 		deck++;
 	}
 	if (score >= 21){
-		printf("%ld\n", score + ace_count);
+		size_t total = score + ace_count;
+		if (total == 21){
+			printf("Blackjack!\n");
+		}else{
+			printf("%ld\n", total);
+		}
 	}else{
 		ace_calculate(&score, ace_count);
 	}
