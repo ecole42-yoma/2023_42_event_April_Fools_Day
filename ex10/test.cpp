@@ -43,10 +43,17 @@ int main(int argc, char **argv)
 	std::cout << std::endl;
 }
 
-// 1.
-// 2.
-// 3. may be H
-// 4.  CONGRATULATIONS ON DECODING THIS LINE THE NEXT CHARACTER IS 2
-// 5.  CONGRATULATIONS ON DECODING THIS LINE THE NEXT LETTER IS J
-// 6.  Congratulations on decoding this line the next letter is F
+// 1. For this exercice you will have to write the password in a symbolum.txt
+// file. // caesar cipher 16
+
+// 2. Congratulations on decoding this line, the first letter is: k //base64
+
+// 3. Congratulations on decoding this line, the third letter is: h //alphabetical substitution
+
+// 4. CONGRATULATIONS ON DE CODING THIS LINE THE NEXT CHARACTER IS 2 // unicode decimal
+
+// 5.  CONGRATULATIONS ON DECODING THIS LINE THE NEXT LETTER IS J // nato alphabet
+
+// 6.  Congratulations on decoding this line the next letter is F // LEET speak
+
 // 7. may be H or
