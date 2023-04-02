@@ -56,5 +56,7 @@ int main(int argc, char **argv)
 
 // 6.  Congratulations on decoding this line the next letter is F // LEET speak
 
-// 7. may be H or
-// pebyklufpyuvcbbcgfggfowhg
+// 7. CO NG RA TU LA TI ON SO ND EC OD IN GT HI SL IN ET HE LA ST LE TX TE RI SM //PLAYFAIR PLAYFAIR
+
+// CO NG RA TU LA TI ON		SO ND EC OD IN GT HI SL IN ET HE NE XT LE TT ER IS ?
+// RS OE BL NZ AY ND QO		TQ TI KI TR EU MO EB OY EU MN KG AY TN PG SZ NM BR TK
