@@ -1,1 +1,7 @@
+message : kidnapped by charly
 
+satellite coordinates: 48.88839084161923, 2.323456417217005
+local position : 1 Rue Jacquemont, 75017 Paris, France
+google map : https://www.google.com/maps/search/charly/@48.8883915,2.323379,21z/data=!4m7!2m6!3m5!1scharly!2s48.8935,+2.3227!4m2!1d2.3227341!2d48.8935046
+url : https://charlyetmoi.com/
+name : Charly et moi

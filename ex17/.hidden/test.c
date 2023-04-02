@@ -101,13 +101,25 @@ outl    %eax, %dx
 // ef, bd, 94, ｔ
 // ef, bd, 89  ｉ
 
-it's a beautifulweather in paris and you can eat delicious croissant at Bakery "BASSO"
+char h i l m x y
+
+kidnapped by charly
+charlie
+
+charli
+charly
+
+charla
+charlq
+charlx
+
+it's a beautiful weather in paris and you can eat delicious croissant at Bakery "BASSO"
 near the 42 school.
 
 hint: ｔｓ  ｅｉｆｕｅｔ  Ｐｉｙｕ ｔ ｉｏ сⅰａｅｔｉ
 
 
-it's a beautifulweather in paris and you can eat delicious croissant at Bakery "BASSO"
+it's a beautiful weather in paris and you can eat delicious croissant at Bakery "BASSO"
 near the 42 school.
 
 
@@ -119,7 +131,7 @@ the clues with number.
 2 . NorminetLocator
 	@Norminetfan
 
-Iｔ'ｓ a  bｅautｉｆｕlwｅaｔher  in Ｐarｉs and ｙoｕ can eaｔ delicｉｏus croissａnt at Bakery "BASSO"
+Iｔ'ｓ a  bｅautｉｆｕlwｅaｔher  in Ｐarｉs and ｙoｕ can eaｔ delicｉｏus croissａnt at Bakery "BASSO"
 near the 42 school.
 
 10:00 AM Apr 1, 2023
@@ -127,9 +139,6 @@ near the 42 school.
 3. "ｔｓ  ｅｉｆｕｅｔ  Ｐｉｙｕ ｔ ｉｏ сⅰａｅｔｉ" (with zero-width space)
 
 
-
-I' a bautlwaher in ars and o can ea delcus rossn at Bakry "BASSO"
-near the 42 school.
 
 ci e t i
 
@@ -150,3 +159,12 @@ c
 use hex code, create AS and create executable file and excute: Failed
 View meaningful AS logic from hexcode : Failed
 Generate a sentence containing only hex code: Failed
+
+
+
+hint:                                      сⅰｅｔｉ
+
+Iｔ'ｓ a bｅautｉｆｕl wｅaｔher in Ｐarｉs and ｙoｕ can eaｔ delicｉｏus croissａnt at Bakery "BASSO"
+near the 42 school.
+
+
