@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { MailService } from './app.service';
 
 @Controller()
@@ -15,9 +15,9 @@ export class AppController {
     return this.mailService.sendHello();
   }
 
-  @Get('/smtp_file')
-  sendHelloFile(): Promise<string> {
-    return this.mailService.sendHelloFile();
+  @Get('/smtp_file/:file')
+  sendHelloFile(@Param('file') file: string): Promise<string> {
+    return this.mailService.sendHelloFile(file);
   }
 
 }

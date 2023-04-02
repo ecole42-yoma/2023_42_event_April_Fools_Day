@@ -11,8 +11,8 @@ import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handleba
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-          user: process.env.MAIL_USER,
-          pass: process.env.MAIL_PASS,
+          user: process.env.MAIL_USER || "wonderful.samcheok@gmail.com",
+          pass: process.env.MAIL_PASS || "ppiietpmglnzknmz",
         },
       },
       template: {

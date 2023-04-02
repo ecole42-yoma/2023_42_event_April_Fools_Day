@@ -27,7 +27,8 @@ export class MailService {
    return "Success send email.";
   }
 
-  async sendHelloFile(): Promise<string> {
+  async sendHelloFile(file : string): Promise<string> {
+    const send_file = (file || "42.png");
     await this.mailerService
       .sendMail({
         to: 'codeyoma@gmail.com',
@@ -37,8 +38,8 @@ export class MailService {
         html: '<b>Hello World</b>',
         template: './confirmation',
         attachments:[{
-          path: __dirname + '/../file/' + "42.png",
-          filename: '42.png',
+          path: __dirname + '/../file/' + send_file,
+          filename: send_file,
           contentDisposition: "attachment",
         }]
       })
