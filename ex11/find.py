@@ -22,9 +22,6 @@ data = response.json()
 print("Name:", name_save)
 print("Abilities:")
 for ability in data['abilities']:
-	temp = ability['ability']['name']
-	temp = temp.lower()
-	front = temp[0]
-	front = front.upper()
-	temp = front + temp[1:]
-	print("- {}".format(temp))
+	temp = ability['ability']['name'].lower()
+	front = temp[0].upper()
+	print("- {}".format(front + temp[1:]))
