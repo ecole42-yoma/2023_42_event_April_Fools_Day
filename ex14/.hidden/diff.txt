@@ -1,0 +1,1 @@
+export N=40 ; diff <(./sastantua $N) <(.hidden/sastantua_macos $N)

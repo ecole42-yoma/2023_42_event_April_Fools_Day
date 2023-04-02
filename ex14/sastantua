@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+import sys
+
+def get_print_width(size):
+	width = 1
+	height = 3
+	width_bias = 0
+
+	floor = []
+
+	for i in range(size):
+		level = []
+		for j in range(height):
+			level.append(width)
+			width += 2
+		height += 1
+		width += 4
+		if i > 0 and i % 2 == 0:
+			width_bias += 2
+		width += width_bias
+		floor.append(level)
+
+	return floor
+
+def draw_door(index, door_size):
+	door = "|" * door_size
+
+	if door_size > 3 and door_size // 2 == index:
+		door = door[:-2] + "$" + door[-1:]
+	return door
+
+def print_normal(width, max_width):
+	print_width = (max_width - width) // 2 - 1
+
+	print("{}/{}\\".format(" " * print_width, "*" * width))
+
+def print_door(index, floor, max_width, door_size):
+	width = floor[index]
+	print_width = (max_width - width) // 2 - 1
+	transom = len(floor) - door_size
+
+	if transom > index:
+		print("{}/{}\\".format(" " * print_width, "*" * width))
+	else:
+		half_width = (width - door_size) // 2
+		door = draw_door(index - transom, door_size)
+		print("{}/{}{}{}\\".format(" " * print_width, "*" * half_width, door, "*" * half_width))
+
+def sastantua(size):
+	floor = get_print_width(size)
+	max_width = (floor[-1][-1] + 2)
+	door_size = ((size - 1) // 2) * 2 + 1
+	door_flag = 0
+
+	for i in range(size):
+		if i is size - 1:
+			door_flag = 1
+		index = 0
+		for j in floor[i]:
+			if door_flag:
+				print_door(index, floor[i], max_width, door_size)
+			else:
+				print_normal(j, max_width)
+			index += 1
+
+
+def	main():
+	if len(sys.argv) != 2:
+		print("Usage: ./sastantua size")
+		exit(1)
+	try:
+		size = int(sys.argv[1])
+	except:
+		print("Size must be an integer")
+		exit(1)
+	if size <= 0:
+		print("Size must be greater than 0")
+		exit(1)
+
+	sastantua(size)
+
+
+if __name__ == "__main__":
+	main()
+
