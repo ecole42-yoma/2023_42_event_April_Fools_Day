@@ -50,10 +50,11 @@ int main(int argc, char **argv)
 
 // 3. Congratulations on decoding this line, the third letter is: h //alphabetical substitution
 
-// 4. CONGRATULATIONS ON DE CODING THIS LINE THE NEXT CHARACTER IS 2 // unicode decimal
+// 4. CONGRATULATIONS ON DECODING THIS LINE THE NEXT CHARACTER IS 2 // unicode decimal
 
-// 5.  CONGRATULATIONS ON DECODING THIS LINE THE NEXT LETTER IS J // nato alphabet
+// 5.  CONGRATULATIONS ON DECODING THIS LINE THE NEXT LETTER IS J //spelling alphabet, nato alphabet
 
 // 6.  Congratulations on decoding this line the next letter is F // LEET speak
 
 // 7. may be H or
+// pebyklufpyuvcbbcgfggfowhg
