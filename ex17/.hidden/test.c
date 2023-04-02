@@ -47,28 +47,106 @@ int	main(int argc, char **argv) {
 // bd                            <unknown>
 // 89                            <unknown>
 
-// outl    %eax, %dx
-// movl    $2478698388, %ebp       ## imm = 0x93BDEF94
-// loop    0xffffffffffffff8d <machine_code+0xffffffffffffff88>
-// movb    %ah, %dl
-// addb    $-67, -276447761(%rbx)
-// movl    %ebp, %edi
-// movl    $2512252806, %ebp       ## imm = 0x95BDEF86
-// outl    %eax, %dx
-// movl    $2495475589, %ebp       ## imm = 0x94BDEF85
-// loop    0xffffffffffffffa5 <machine_code+0xffffffffffffffa0>
-// andl    $3169812608, %edx       ## imm = 0xBCEF8080
-// movb    $-17, %al
-// movl    $2579361673, %ebp       ## imm = 0x99BDEF89
-// outl    %eax, %dx
-// movl    $2290147989, %ebp       ## imm = 0x8880E295
-// outl    %eax, %dx
-// movl    $2290147988, %ebp       ## imm = 0x8880E294
-// outl    %eax, %dx
-// movl    $2411589513, %ebp       ## imm = 0x8FBDEF89
-// loop    0xffffffffffffffc6 <machine_code+0xffffffffffffffc1>
-// xchgl   %ecx, %edx
-// andl    $3186602117, %edx       ## imm = 0xBDEFB085
-// subl    $3186591165, %edi       ## imm = 0xBDEF85BD
-// xchgl   %esp, %eax
-// outl    %eax, %dx
+outl    %eax, %dx
+movl    $2478698388, %ebp       ## imm = 0x93BDEF94
+loop    0xffffffffffffff8d <machine_code+0xffffffffffffff88>
+movb    %ah, %dl
+addb    $-67, -276447761(%rbx)
+movl    %ebp, %edi
+movl    $2512252806, %ebp       ## imm = 0x95BDEF86
+outl    %eax, %dx
+movl    $2495475589, %ebp       ## imm = 0x94BDEF85
+loop    0xffffffffffffffa5 <machine_code+0xffffffffffffffa0>
+andl    $3169812608, %edx       ## imm = 0xBCEF8080
+movb    $-17, %al
+movl    $2579361673, %ebp       ## imm = 0x99BDEF89
+outl    %eax, %dx
+movl    $2290147989, %ebp       ## imm = 0x8880E295
+outl    %eax, %dx
+movl    $2290147988, %ebp       ## imm = 0x8880E294
+outl    %eax, %dx
+movl    $2411589513, %ebp       ## imm = 0x8FBDEF89
+loop    0xffffffffffffffc6 <machine_code+0xffffffffffffffc1>
+xchgl   %ecx, %edx
+andl    $3186602117, %edx       ## imm = 0xBDEFB085
+subl    $3186591165, %edi       ## imm = 0xBDEF85BD
+xchgl   %esp, %eax
+outl    %eax, %dx
+
+// ef, bd, 94, ｔ
+// ef, bd, 93, ｓ
+// e2, 80, 88,
+// e2, 80, 83,
+// ef, bd, 85, ｅ
+// ef, bd, 89, ｉ
+// ef, bd, 86, ｆ
+// ef, bd, 95, ｕ
+// ef, bd, 85, ｅ
+// ef, bd, 94, ｔ
+// e2, 80, 81,
+// e2, 80, 80,
+// ef, bc, b0, Ｐ
+// ef, bd, 89, ｉ
+// ef, bd, 99, ｙ
+// ef, bd, 95, ｕ
+// e2, 80, 88,
+// ef, bd, 94, ｔ
+// e2, 80, 88,
+// ef, bd, 89, ｉ
+// ef, bd, 8f, ｏ
+// e2, 80, 87,
+// d1, 81, e2, 85, b0, сⅰ
+// ef, bd, 81, ａ
+// ef, bd, 85, ｅ
+// ef, bd, 94, ｔ
+// ef, bd, 89  ｉ
+
+it's a beautifulweather in paris and you can eat delicious croissant at Bakery "BASSO"
+near the 42 school.
+
+hint: ｔｓ  ｅｉｆｕｅｔ  Ｐｉｙｕ ｔ ｉｏ сⅰａｅｔｉ
+
+
+it's a beautifulweather in paris and you can eat delicious croissant at Bakery "BASSO"
+near the 42 school.
+
+
+act like cryptographer.
+
+the clues with number.
+1. We suspect that this deleted tweet hide Norminet current location. Help us find it.
+
+2 . NorminetLocator
+	@Norminetfan
+
+Iｔ'ｓ a  bｅautｉｆｕlwｅaｔher  in Ｐarｉs and ｙoｕ can eaｔ delicｉｏus croissａnt at Bakery "BASSO"
+near the 42 school.
+
+10:00 AM Apr 1, 2023
+
+3. "ｔｓ  ｅｉｆｕｅｔ  Ｐｉｙｕ ｔ ｉｏ сⅰａｅｔｉ" (with zero-width space)
+
+
+
+I' a bautlwaher in ars and o can ea delcus rossn at Bakry "BASSO"
+near the 42 school.
+
+ci e t i
+
+t t t t
+p
+s
+a
+e e e
+o
+i i i i i
+y
+f
+u u
+c
+" " * 7
+
+
+use hex code, create AS and create executable file and excute: Failed
+View meaningful AS logic from hexcode : Failed
+Generate a sentence containing only hex code: Failed

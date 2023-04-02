@@ -1,5 +1,5 @@
 
+as -o out in
 objdump -d
 objdump -D
-as
-ld
+ld -o out in

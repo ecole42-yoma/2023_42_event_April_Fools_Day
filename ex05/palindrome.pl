@@ -5,6 +5,8 @@ print "Enter a string: ";
 my $string = <>;
 chomp $string;
 
+$string = lc $string;
+
 my $reverse = reverse $string;
 
 if ($string eq $reverse) {
