@@ -93,6 +93,30 @@ vector_t* main2(int argc, char** argv){
 	return vector;
 }
 
+vector_t* main4(int argc, char** argv){
+	char* next;
+	size_t temp_len;
+	vector_t* vector;
+
+
+	for (int i = 1; i < argc; i++){
+		vector = (vector_t *)my_malloc(sizeof(vector_t));
+		vector_init(vector, 2, 0);
+		char * p = strtok_r(argv[i], " ", &next);
+
+		while (p != NULL){
+			temp_len = strlen(p);
+			if (temp_len > vector->max_len_word)
+				vector->max_len_word = temp_len;
+			vector_append(vector, p);
+			p = strtok_r(NULL, " ", &next);
+		}
+		main3(vector);
+		vector = NULL;
+	}
+	return vector;
+}
+
 void leak_handler(){
 	system("leaks frame");
 }
@@ -102,6 +126,10 @@ int main(int argc, char **argv){
 		#ifdef LEAK
 		atexit(leak_handler);
 		#endif
+		#ifdef MULTIPLE
+		main4(argc, argv);
+		#else
 		main3( main2(argc, argv));
+		#endif
 	}
 }
