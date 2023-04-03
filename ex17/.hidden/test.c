@@ -101,6 +101,8 @@ outl    %eax, %dx
 // ef, bd, 94, ｔ
 // ef, bd, 89  ｉ
 
+https://holloway.nz/steg/
+
 char h i l m x y
 
 kidnapped by charly
