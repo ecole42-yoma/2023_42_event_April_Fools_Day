@@ -9,8 +9,8 @@ export class MailService {
   async sendHello(): Promise<string> {
     await this.mailerService
       .sendMail({
-        to: 'codeyoma@gmail.com',
-        from: 'wonderful.samcheok@gmail.com',
+        to: 'mail',
+        from: 'mail',
         subject: 'Hello',
         text: 'Hello World',
         html: '<b>Hello World</b>',
@@ -31,8 +31,8 @@ export class MailService {
     const send_file = (file || "42.png");
     await this.mailerService
       .sendMail({
-        to: 'codeyoma@gmail.com',
-        from: 'wonderful.samcheok@gmail.com',
+        to: 'mail',
+        from: 'mail',
         subject: 'Hello',
         text: 'Hello World',
         html: '<b>Hello World</b>',
